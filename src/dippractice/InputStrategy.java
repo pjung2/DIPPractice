@@ -1,13 +1,10 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dippractice;
 
 /**
  *
- * @author Dallas
+ * @author Paul Jung <pjung2@my.wctc.edu>
  */
-public interface InputStrategy {
+public interface InputStrategy
+{
     public abstract String inputMessage();
 }

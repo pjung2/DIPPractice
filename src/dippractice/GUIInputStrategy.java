@@ -1,16 +1,17 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dippractice;
+
+import javax.swing.JOptionPane;
 
 /**
  *
- * @author Dallas
+ * @author Paul Jung <pjung2@my.wctc.edu>
  */
-import javax.swing.JOptionPane;
-public class GUIInputStrategy implements InputStrategy{
-    public String inputMessage(){
+
+public class GUIInputStrategy implements InputStrategy
+{
+    @Override
+    public String inputMessage()
+    {
         String in = JOptionPane.showInputDialog("Enter input: ", "");
         return in;
     }

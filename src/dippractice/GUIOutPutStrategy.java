@@ -1,17 +1,17 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dippractice;
 
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author Dallas
+ * @author Paul Jung <pjung2@my.wctc.edu>
  */
-public class GUIOutPutStrategy implements OutputStrategy{
-    public void outputMessage(String msg){
+
+public class GUIOutPutStrategy implements OutputStrategy
+{
+    @Override
+    public void outputMessage(String msg)
+    {
         JOptionPane.showMessageDialog(null, msg);
     }
 }

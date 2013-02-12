@@ -1,15 +1,15 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dippractice;
 
 /**
  *
- * @author Dallas
+ * @author Paul Jung <pjung2@my.wctc.edu>
  */
-public class ConsoleOutPutStrategy implements OutputStrategy{
-    public void outputMessage(String msg){
-        System.out.println(msg);
+
+public class ConsoleOutPutStrategy implements OutputStrategy
+{
+    @Override
+    public void outputMessage(String msg)
+    {
+        System.out.println("You typed " + msg);
     }
 }

@@ -1,15 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dippractice;
 
 /**
  *
- * @author Dallas
+ * @author Paul Jung <pjung2@my.wctc.edu>
  */
-public interface OutputStrategy {
 
-    void outputMessage(String msg);
-    
+public interface OutputStrategy
+{
+    void outputMessage(String msg); 
 }

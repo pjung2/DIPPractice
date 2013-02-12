@@ -1,18 +1,20 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dippractice;
+
+import java.util.*;
 
 /**
  *
- * @author Dallas
+ * @author Paul Jung <pjung2@my.wctc.edu>
  */
-import java.util.*;
-public class ConsoleInputStrategy implements InputStrategy{
+
+public class ConsoleInputStrategy implements InputStrategy
+{
     Scanner scanner = new Scanner(System.in);
-    public String inputMessage(){
-        System.out.println("Enter input: ");
+    
+    @Override
+    public String inputMessage()
+    {
+        System.out.println("Enter text: ");
         String in = scanner.nextLine();
         return in;
     }

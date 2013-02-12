@@ -1,20 +1,19 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package dippractice;
 
 /**
  *
- * @author Dallas
+ * @author Paul Jung <pjung2@my.wctc.edu>
  */
-public class DIPPractice {
 
+public class DIPPractice
+{
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         OutputStrategy out = new ConsoleOutPutStrategy();
+        //InputStrategy in = new ConsoleInputStrategy();
         InputStrategy in = new GUIInputStrategy();
         MessageService service = new MessageService(out, in);
         service.outputMessage();
